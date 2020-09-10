@@ -12,7 +12,7 @@ struct Alumno{
   char apellidos[20];
   char carrera[15];
   int valido;
-  Alumno(char _cod[5], char _nombre[12], char _apellidos[20], char _carrera[15], char _valido[1]){
+  Alumno(char _cod[5], char _nombre[12], char _apellidos[20], char _carrera[15]){
     strcpy(codigo, _cod);
     strcpy(nombre, _nombre);
     strcpy(apellidos, _apellidos);
@@ -164,9 +164,9 @@ class FixedRecord{
 
 int main(){
   string line;
-  Alumno alumno1((char*)"0001", (char*)"Howard", (char*)"Paredes Zegarra", (char*)"Computacion", (char*) "1");
-  Alumno alumno2((char*)"0002", (char*)"Penny", (char*)"Vargas Cordero", (char*)"Industrial", (char*)"1");
-  Alumno alumno3((char*)"0003", (char*)"Sheldon", (char*)"Cooper Quizpe", (char*)"Mecatronica", (char*) "1");
+  Alumno alumno1((char*)"0001", (char*)"Howard", (char*)"Paredes Zegarra", (char*)"Computacion");
+  Alumno alumno2((char*)"0002", (char*)"Penny", (char*)"Vargas Cordero", (char*)"Industrial");
+  Alumno alumno3((char*)"0003", (char*)"Sheldon", (char*)"Cooper Quizpe", (char*)"Mecatronica");
   FixedRecord fr("datos1.txt");
   fr.add(alumno1);
   fr.add(alumno2);
