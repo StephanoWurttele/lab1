@@ -120,10 +120,10 @@ int main(){
   Alumno alumno2("Penny", "Hofstadter Zegarra", "Mecanica", 254);
   Alumno alumno3("Sheldon", "Cooper Zegarra", "Computacion", 253);
   FixedRecord fr("datos3.txt");
-  //fr.add(alumno1);
-  //fr.add(alumno2);
-  //fr.add(alumno3);
-  //fr.load();
+  fr.add(alumno1);
+  fr.add(alumno2);
+  fr.add(alumno3);
+  fr.load();
   fr.readRecord(3);
   return 0;
 }
